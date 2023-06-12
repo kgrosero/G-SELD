@@ -84,10 +84,9 @@ def main(argv):
     train_splits, val_splits, test_splits = None, None, None
 
     if params['mode'] == 'dev':
-        test_splits = [40]
-        val_splits = [20]
-#        train_splits = [[10,20,30,40]]
-        train_splits = [[ 10,11,12,13,14,15,16,30,31,32,33,34,35,36,50,51,52,53,54,55,56, 60,61,62,63,64,65,66]]
+        test_splits = [60]
+        val_splits = [50]
+        train_splits = [[10,20,30,40]]
 
     elif params['mode'] == 'eval':
         test_splits = [[7, 8]]
