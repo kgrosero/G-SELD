@@ -12,20 +12,10 @@ def get_params(argv='1'):
 
         # INPUT PATH
         dataset_dir='/home/lab_acustica/Documentos/SELD_2021/',  # Base folder containing the foa_dev/mic_dev and metadata folders
-	#dataset_dir='/media/lab_acustica/LAC/Datasets/SELD_2021/',  # Base folder containing the foa_dev/mic_dev and metadata folders with data augmentation (freq masking)
-	
         # OUTPUT PATH
         feat_label_dir='/home/lab_acustica/Documentos/SELD_2021/seld_feat_label/',  # Directory to dump extracted features and labels
-        #feat_label_dir='/media/lab_acustica/LAC/Datasets/SELD_2021/seld_feat_label/',  # Directory to dump extracted features and labels with data augmentation
-        
-        #feat_label_dir='/home/lab_acustica/Documentos/SELD_2021/seld_feat_label_gmm2/', 
-        #model_dir='models_gmm2/',            # Dumps the trained models and training curves in this folder
-        #dcase_output_dir='results_gmm2/',    # recording-wise results are dumped in this path.
-        #model_dir='models_tcn/',            # Dumps the trained models and training curves in this folder
-        #dcase_output_dir='results_tcn/',    # recording-wise results are dumped in this path.
-        model_dir='models_DA_b64_g_100_10v20t/',            # Dumps the trained models and training curves in this folder
-        #model_dir = 'model_params',
-        dcase_output_dir='results_DA_b64_g_100_10v20t/',    # recording-wise results are dumped in this path.        
+        model_dir='models/',            # Dumps the trained models and training curves in this folder
+        dcase_output_dir='results/',    # recording-wise results are dumped in this path.        
 
         # DATASET LOADING PARAMETERS
         mode='dev',          # 'dev' - development or 'eval' - evaluation dataset
